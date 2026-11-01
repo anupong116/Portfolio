@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - DevFolio Bootstrap Template</title>
-  <meta name="description" content="">
+  <title>อนุพงษ์ นิยม — IT Support &amp; Software Developer</title>
+  <meta name="description" content="พอร์ตโฟลิโอของ อนุพงษ์ นิยม IT Support (Software Developer) นักศึกษาเทคโนโลยีสารสนเทศ มหาวิทยาลัยกรุงเทพ">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' fill='white' text-anchor='middle'%3EAN%3C/text%3E%3C/svg%3E" rel="icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +25,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: DevFolio
@@ -42,19 +42,18 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">DevFolio</h1>
+        <h1 class="sitename">อนุพงษ์<span>.</span></h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" aria-label="เมนูหลัก">
         <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <li><a href="#hero" class="active">หน้าแรก</a></li>
+          <li><a href="#about">เกี่ยวกับฉัน</a></li>
+          <li><a href="#resume">ประวัติ</a></li>
+          <li><a href="#portfolio">ผลงาน</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
         </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" role="button" aria-label="เปิดเมนู" tabindex="0"></i>
       </nav>
 
     </div>
@@ -63,102 +62,102 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/S__51642474.jpg" alt="" data-aos="fade-in">
-
-      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-        <h2>MY PORTFOLIO</h2>
-        <p><span class="typed" data-typed-items="Designer, Developer, Freelancer, Front-end"></span></p>
+    <section id="hero" class="hero section dark-background d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-5 order-lg-2 text-center" data-aos="fade-in">
+            <img src="assets/img/profile-hero.jpg" class="hero-photo" alt="รูปของ อนุพงษ์ นิยม">
+          </div>
+          <div class="col-lg-7 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <div class="hero-text">
+              <span class="eyebrow"><span class="dot"></span> พร้อมทำงานเต็มเวลา · กรุงเทพฯ</span>
+              <h2>สวัสดีครับ ผม อนุพงษ์ นิยม</h2>
+              <p class="role"><span class="typed" data-typed-items="IT Support, นักพัฒนาซอฟต์แวร์, นักออกแบบ UX/UI"></span></p>
+              <p class="intro">นักศึกษาเทคโนโลยีสารสนเทศ มหาวิทยาลัยกรุงเทพ ปัจจุบันทำงานตำแหน่ง IT Support (Software Developer) พัฒนาระบบภายในองค์กรให้ใช้งานง่ายและตรงกับงานจริง</p>
+              <div class="hero-actions">
+                <a href="#portfolio" class="btn-main"><i class="bi bi-grid"></i> ดูผลงาน</a>
+                <a href="#contact" class="btn-ghost"><i class="bi bi-envelope"></i> ติดต่อผม</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
 
+      <div class="container section-title" data-aos="fade-up">
+        <span class="kicker">เกี่ยวกับฉัน</span>
+        <h2>ทำความรู้จักผม</h2>
+      </div>
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
-          <div class="col-md-6">
 
-            <div class="row justify-content-between gy-4">
-              <div class="col-lg-5">
-                <img src="assets/img/S__52412441_0.jpg" class="img-fluid" alt="">
+          <div class="col-lg-5">
+            <div class="profile-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="assets/img/profile-card.jpg" alt="รูปของ อนุพงษ์ นิยม">
+                <div>
+                  <h3>อนุพงษ์ นิยม</h3>
+                  <p class="title">IT Support &amp; Software Developer</p>
+                </div>
               </div>
-              <div class="col-lg-7 about-info">
-                <p><strong>Name: </strong> <span>Anupong Niyom</span></p>
-                <p><strong>Age: </strong> <span>21</span></p>
-                <p><strong>Profile: </strong> <span>font-end developer</span></p>
-                <p><strong>Email: </strong> <span>anupong.niyo@bumail.net</span></p>
-                <p><strong>Phone: </strong> <span>095-504-4849</span></p>
-              </div>
-            </div>
-
-            <div class="skills-content skills-animation">
-
-              <h5>Skills</h5>
-
-              <div class="progress">
-                <span class="skill"><span>HTML</span> <i class="val">60%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="60"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>CSS</span> <i class="val">30%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="30"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>JavaScript</span> <i class="val">20%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="20"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>Python</span> <i class="val">50%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>Database</span> <i class="val">30%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="30"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
+              <ul class="info-list">
+                <li><i class="bi bi-briefcase"></i><div><small>ทำงานที่</small><span>บริษัท เลิศลักษณ์แฟชั่นเฮ้าส์ จำกัด</span></div></li>
+                <li><i class="bi bi-envelope"></i><div><small>อีเมล</small><a href="mailto:anupong.niyo@gmail.com">anupong.niyo@gmail.com</a></div></li>
+                <li><i class="bi bi-telephone"></i><div><small>โทรศัพท์</small><a href="tel:0955044849">095-504-4849</a></div></li>
+                <li><i class="bi bi-geo-alt"></i><div><small>ที่อยู่</small><span>อ่อนนุช 49 กรุงเทพฯ</span></div></li>
+                <li><i class="bi bi-calendar-check"></i><div><small>สถานะ</small><span>เรียนเฉพาะวันพุธ ทำงานเต็มเวลาได้</span></div></li>
+              </ul>
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-lg-7">
             <div class="about-me">
-              <h4>About me</h4>
+              <h4>แนะนำตัว</h4>
               <p>
-                A cheerful and humorous individual, though sometimes reserved when approaching new
-                people. While not always the most articulate, I am an attentive listener and can balance
-                being both a supportive team member and a proactive leader.
+                นักศึกษาสาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยกรุงเทพ คาดว่าจะสำเร็จการศึกษาวันที่ 5 ธันวาคม 2569
+                ปัจจุบันทำงานตำแหน่ง IT Support (Software Developer) มีประสบการณ์จริงในการพัฒนาแอปพลิเคชันองค์กร
+                สร้างระบบเอกสารเองตั้งแต่ต้น ต่อยอดระบบเดิม และปรับมาตรฐาน UX/UI ให้ใช้งานง่าย โดยยึดผู้ใช้เป็นศูนย์กลาง
               </p>
               <p>
-                A highly motivated and quick learner with strong problem-solving skills, eager to
-                contribute and grow in challenging work environments. Committed to continuous self-
-                improvement to achieve the highest level of success.
+                นอกจากงานพัฒนา ยังทำหน้าที่รับฟีดแบ็กจากผู้ใช้งานโปรแกรมของบริษัท จดบันทึกปัญหาและข้อเสนอแนะ
+                แล้วนำไปพูดคุยกับคนในทีมเพื่อปรับปรุงระบบและวิธีการทำงานให้ดีขึ้นอย่างต่อเนื่อง
               </p>
               <p>
-                Resilient under pressure and open to learning new skills. Disciplined and enjoys
-                collaborating in a positive team environment. Confident in speaking up when necessary
-                and willing to acknowledge and learn from mistakes.
+                เป็นคนร่าเริง เป็นผู้ฟังที่ดี เรียนรู้เร็ว ปรับตัวได้ดี และชอบทำงานร่วมกับทีม
+                กล้าแสดงความคิดเห็นเมื่อจำเป็น และพร้อมเรียนรู้จากความผิดพลาด
               </p>
             </div>
-          </div>
-        </div>
 
+            <div class="skills-content">
+              <h5>ทักษะ</h5>
+              <div class="skill-group">
+                <h6>ภาษาโปรแกรม</h6>
+                <div class="chips"><span>JavaScript</span><span>PHP</span><span>Python</span><span>HTML</span><span>CSS</span><span>SQL (MySQL)</span></div>
+              </div>
+              <div class="skill-group">
+                <h6>เฟรมเวิร์กและไลบรารี</h6>
+                <div class="chips"><span>React</span><span>Node.js</span><span>Express</span><span>TypeScript</span><span>Streamlit</span></div>
+              </div>
+              <div class="skill-group">
+                <h6>ฐานข้อมูลและเครื่องมือข้อมูล</h6>
+                <div class="chips"><span>MySQL</span><span>Docker</span><span>Power BI</span></div>
+              </div>
+              <div class="skill-group">
+                <h6>เครื่องมือพัฒนา</h6>
+                <div class="chips"><span>Git / GitHub</span><span>VS Code</span><span>Figma</span><span>XAMPP</span><span>Microsoft Office</span><span>Command Line</span></div>
+              </div>
+              <div class="skill-group">
+                <h6>ทักษะการทำงาน</h6>
+                <div class="chips soft"><span>เรียนรู้เร็ว</span><span>แก้ปัญหา</span><span>ทำงานเป็นทีม</span><span>ปรับตัวเก่ง</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
     </section><!-- /About Section -->
@@ -166,310 +165,179 @@
     <!-- Resume Section -->
     <section id="resume" class="resume section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>His needs are met through something that indeed cannot be avoided.</p>
-      </div><!-- End Section Title -->
+        <span class="kicker">ประวัติ</span>
+        <h2>ประสบการณ์และการศึกษา</h2>
+        <p>ประสบการณ์ทำงานจริง การศึกษา และข้อมูลติดต่อ</p>
+      </div>
 
       <div class="container">
+        <div class="row gy-4">
 
-        <div class="row">
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="resume-block">
+              <h3 class="resume-title"><i class="bi bi-mortarboard"></i> การศึกษา</h3>
+              <div class="resume-item">
+                <h5>2565 – ปัจจุบัน</h5>
+                <h4>มหาวิทยาลัยกรุงเทพ</h4>
+                <p>วิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ (วิทยาการคอมพิวเตอร์)</p>
+                <span class="gpa">เกรดเฉลี่ย 2.45 · คาดว่าจะจบ 5 ธ.ค. 2569 (เรียนเฉพาะวันพุธ)</span>
+              </div>
+              <div class="resume-item">
+                <h5>2562 – 2565</h5>
+                <h4>โรงเรียนปทุมคงคา</h4>
+                <p>มัธยมศึกษาตอนปลาย แผนการเรียนศิลป์-ฝรั่งเศส</p>
+              </div>
+            </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>ANUPONG NIYOM</h4>
-              <p><em>Motivated individual, quick learner with strong problem
-                     solving skills, eager to contribute and grow in a
-                     challenging work environment, continuously developing
-                     to achieve the highest success</em></p>
-              <ul>
-                <li>1/1920 Sukhumvit 62 Bangchak Bangkok 10260</li>
-                <li>095-504-4849</li>
-                <li>anupong.niyo@bumail.net</li>
+            <div class="resume-block">
+              <h3 class="resume-title"><i class="bi bi-person-badge"></i> ติดต่อ</h3>
+              <ul class="contact-mini">
+                <li><i class="bi bi-geo-alt"></i>335/2 ซอยอ่อนนุช 49 กรุงเทพฯ</li>
+                <li><i class="bi bi-telephone"></i><a href="tel:0955044849">095-504-4849</a></li>
+                <li><i class="bi bi-envelope"></i><a href="mailto:anupong.niyo@gmail.com">anupong.niyo@gmail.com</a></li>
               </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bangkok University</h4>
-              <h5>2022 - 2025</h5>
-              <p>Bachelor of Information Technology, Major in Compute GPA: 2.36</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Patumkongka School</h4>
-              <h5>2016 - 2021</h5>
-              <p>Major in French Language GPA: 2.25</p>
-            </div><!-- Edn Resume Item -->
-
+            </div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4> Part-time Staff, Big C Rama 4 </h4>
-              <h5>June - July 2023</h5>
-              <p><em>(Fruits & Vegetables Department)</em></p>
-              <ul>
-                <li>Operated the cash register efficiently.</li>
-                <li>Organized and arranged fruits and vegetables.</li>
-                <li> Cut and prepared fruits for display.</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-          
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <h3 class="resume-title">Achievement</h3>
-            <div class="resume-item">
-              <h4>Mini Project : BabyNutritonApp</h4>
-              <h5>(design)</h5>
-              <ul>
-                <li>Designed mobile app UI/UX</li>
-                <li>Planned app screens and features for tracking baby nutrition and meals</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+            <div class="resume-block">
+              <h3 class="resume-title"><i class="bi bi-briefcase"></i> ประสบการณ์ทำงาน</h3>
+              <div class="resume-item">
+                <h5>27 มิ.ย. 2569 – ปัจจุบัน</h5>
+                <h4>IT Support (Software Developer)</h4>
+                <p class="company">บริษัท เลิศลักษณ์แฟชั่นเฮ้าส์ จำกัด · ผลิตและจำหน่ายเสื้อผ้า/ชุดยูนิฟอร์ม</p>
+                <ul class="duties">
+                  <li><strong>ระบบเอกสารใบสั่งผลิต (Solo Project)</strong> — ออกแบบและพัฒนาเองทั้งหมดตั้งแต่ต้นเพียงคนเดียว บันทึกสเปกสินค้าและวัตถุดิบทั้งหมดที่ใช้ผลิตเสื้อผ้าแต่ละตัว พร้อมระบุขั้นตอนของช่างเย็บอย่างชัดเจน เช่น ตำแหน่งการเย็บ การติดชิ้นส่วน และลำดับการประกอบ ช่วยให้ผลิตแม่นยำขึ้นและเตรียมวัตถุดิบผิดน้อยลง <a href="project.html#production-order">ดูผลงาน</a></li>
+                  <li><strong>เชื่อมงานทุกฝ่ายให้อยู่บนระบบเดียว</strong> — ต่อยอดระบบเดิมให้ฝ่ายขาย ฝ่ายผลิต และฝ่ายขนส่งทำงานบนระบบเดียวกัน กำหนดขั้นตอนงาน (Workflow) ให้เป็นระเบียบ ระบบบอกได้ว่าสินค้ารหัสไหนอยู่ขั้นตอนใด แผนกใด ทำไปแล้วกี่ตัว และมีปุ่มกดส่งต่อไปแผนกถัดไป ข้อมูลจากหลายฝ่ายรวมอยู่ที่เดียว ไม่ต้องจดแยกหลายแห่ง</li>
+                  <li><strong>ระบบลูกค้าและเอกสารการขาย (CRM)</strong> — พัฒนาโมดูลเก็บข้อมูลลูกค้า ติดตามสถานะงานขาย และออกเอกสาร เช่น ใบเสนอราคา อัตโนมัติ เอกสารถูกต้อง เป็นทางการ สวยงาม และทำได้เร็วขึ้น</li>
+                  <li><strong>ติดตามการผลิตและเปรียบเทียบต้นทุนค่าแรง</strong> — ทำโปรแกรมรายงานของฝ่ายผลิต ติดตามแบบเรียลไทม์ว่าช่างเย็บแต่ละคนเก็บงานได้กี่ตัว ใช้เวลากี่วันในแต่ละโปรเจกต์ แล้วสรุปเป็นรายงานเพื่อเปรียบเทียบต้นทุนค่าแรงแต่ละโปรเจกต์ได้แม่นยำ</li>
+                  <li><strong>วางมาตรฐาน UX/UI ของระบบเดิม</strong> — รับช่วงต่อระบบที่แต่ละเมนูหน้าตาไม่เหมือนกัน แล้วออกแบบมาตรฐานใหม่ให้ทุกเมนูเป็นแบบเดียวกัน ระบบดูไม่ยาก และพนักงานทุกฝ่ายเรียนรู้ได้เร็ว</li>
+                  <li><strong>รับฟีดแบ็กและปรับปรุงอย่างต่อเนื่อง</strong> — รับฟีดแบ็กจากผู้ใช้งานโปรแกรมของบริษัท จดบันทึกปัญหาและข้อเสนอแนะ แล้วนำไปพูดคุยกับคนในทีมเพื่อวางแนวทางปรับปรุงการทำงานของระบบ</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h5>มิ.ย. – ก.ค. 2566</h5>
+                <h4>พนักงานพาร์ทไทม์</h4>
+                <p class="company">บิ๊กซี พระราม 4 · แผนกผักและผลไม้</p>
+                <ul>
+                  <li>ดูแลเครื่องคิดเงินได้อย่างถูกต้องและรวดเร็ว</li>
+                  <li>จัดเรียง ตัดแต่ง และเตรียมผักผลไม้สำหรับวางขาย</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
         </div>
-
       </div>
 
     </section><!-- /Resume Section -->
 
-
-
     <!-- Stats Section -->
     <section id="stats" class="stats section accent-background">
-
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-
+      <img src="assets/img/stats-bg-mountain.jpg" alt="" data-aos="fade-in">
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
+          <div class="col-6 col-md-4">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="0" class="purecounter">0</span>
-              <p>Clients</p>
+              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter">8</span>
+              <p>ผลงาน</p>
             </div>
-          </div><!-- End Stats Item -->
+          </div>
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-6 col-md-4">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="0" class="purecounter">4</span>
-              <p>Projects</p>
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter">4</span>
+              <p>เดือน ประสบการณ์ทำงานจริง</p>
             </div>
-          </div><!-- End Stats Item -->
+          </div>
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-6 col-md-4">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="89" data-purecounter-duration="0" class="purecounter">89</span>
-              <p>Hours Of Support</p>
+              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter">6</span>
+              <p>ภาษาโปรแกรม</p>
             </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="0" class="purecounter">0</span>
-              <p>Awards</p>
-            </div>
-          </div><!-- End Stats Item -->
+          </div>
 
         </div>
-
       </div>
-
     </section><!-- /Stats Section -->
 
-    <!-- Portfolio Section -->
+    <!-- Projects Section -->
     <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>His needs are met through something that indeed cannot be avoided.</p>
-      </div><!-- End Section Title -->
+        <span class="kicker">ผลงาน</span>
+        <h2>ผลงานที่ผ่านมา</h2>
+        <p>เลื่อนลงเพื่อดูผลงานทั้งหมด กดที่ภาพเพื่อดูหน้าจอขนาดใหญ่พร้อมคำอธิบาย หรือเลือกหมวดเพื่อดูเฉพาะที่สนใจ</p>
+      </div>
 
       <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/App1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App BabyNutritonApp</h4>
-                <p>An app for recommending baby food to new parents</p>
-                <a href="assets/img/portfolio/App1-3.png" title="Page 3: Cooking Tips This page provides helpful cooking tips and advice for better meal preparation." data-gallery="portfolio-gallery-app1" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="assets/img/portfolio/App1-2.png" title="Page 2: Recipe List This page displays a list of available recipes with images, allowing users to browse and select a dish." data-gallery="portfolio-gallery-app1" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="assets/img/portfolio/App1-1.png" title="Page 1: Recipe Detail This page shows the details of a selected recipe, including the dish name, ingredients, and cooking instructions. " data-gallery="portfolio-gallery-app1" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="assets/img/portfolio/App1.png" title="Home: Select options for the system to find the desired food." data-gallery="portfolio-gallery-app1" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/App2.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App Number Guessing Game</h4>
-                <p>A fun challenging guessing numbers game</p>
-                <a href="assets/img/portfolio/App2-5.png" title="History: All play history" data-gallery="portfolio-gallery-app2" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="assets/img/portfolio/App2-4.png" title="Challeen mode: Challenge mode, play through the levels continuously." data-gallery="portfolio-gallery-app2" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="assets/img/portfolio/App2-4.png" title="hard level: Game level hard 1 - 250" data-gallery="portfolio-gallery-app2" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="assets/img/portfolio/App2-3.png" title="Intermediate level: Intermediate game 1 - 100" data-gallery="portfolio-gallery-app2" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="assets/img/portfolio/App2-1.png" title="Easy level: Easy level game 1 - 50" data-gallery="portfolio-gallery-app2" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="assets/img/portfolio/App2.png" title="Home: Select the desired game level" data-gallery="portfolio-gallery-app2" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/App3.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App Alchol Location </h4>
-                <p>An app for nightlife enthusiasts looking for places to visit.</p>
-                <a href="assets/img/portfolio/App3-2.png"  title="Page 3: Reserve a table" data-gallery="portfolio-gallery-app3" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="assets/img/portfolio/App3-1.png"  title="Page 2: Store details and reviews" data-gallery="portfolio-gallery-app3" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="assets/img/portfolio/App3-4.png"  title="Page 1: The front of each shop" data-gallery="portfolio-gallery-app3" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="assets/img/portfolio/App3-3.png"  title="Home Page: Menu" data-gallery="portfolio-gallery-app3" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="assets/img/portfolio/App3.png"  title="Login Page: Email & Password" data-gallery="portfolio-gallery-app3" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-      
-
-    </section><!-- /Portfolio Section -->
-
-
-
-  
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>His needs are met by something that indeed cannot escape the essence.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-5">
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>1/1920 Sukhumvit 62 Bangchak Bangkok 10260</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>095-504-4849</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>anupong.niyo@bumail.net</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-        </div>
-
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-            </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form><!-- End Contact Form -->
-
+        <!-- Cards and filters are built from assets/js/projects.js — edit projects there -->
+        <div class="project-filters" id="project-filters" role="toolbar" aria-label="กรองผลงานตามประเภท"></div>
+        <div class="showcase-list" id="project-list"></div>
       </div>
 
-    </section><!-- /Contact Section -->
+    </section><!-- /Projects Section -->
+
 
   </main>
 
-  <footer id="footer" class="footer accent-background">
-
+  <!-- End credits: what this site is, how it was built, how to get in touch -->
+  <footer id="contact" class="footer end-credits">
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+
+      <div class="credits-cta" data-aos="fade-up">
+        <span class="kicker">สนใจร่วมงาน?</span>
+        <h2>ยินดีพูดคุยเรื่องงานครับ</h2>
+        <p>สนใจรับผมเข้าร่วมทีม อยากสอบถามรายละเอียดผลงาน หรือนัดสัมภาษณ์ ติดต่อได้ทางโทรศัพท์หรืออีเมลด้านล่าง พร้อมเริ่มงานเต็มเวลา</p>
+        <div class="cta-actions">
+          <a class="btn-main" href="tel:0955044849"><i class="bi bi-telephone"></i> โทร 095-504-4849</a>
+          <a class="btn-ghost" href="mailto:anupong.niyo@gmail.com"><i class="bi bi-envelope"></i> anupong.niyo@gmail.com</a>
+          <button type="button" class="btn-ghost" id="copy-email" data-email="anupong.niyo@gmail.com"><i class="bi bi-copy"></i> <span>คัดลอกอีเมล</span></button>
+        </div>
       </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+
+      <div class="row gy-4 credits-grid">
+        <div class="col-lg-4 col-md-6">
+          <h3>เว็บไซต์นี้ทำมาเพื่อ</h3>
+          <p>พอร์ตโฟลิโอสำหรับสมัครงาน รวบรวมประวัติ ประสบการณ์ทำงานจริง และผลงานที่ผ่านมาของ อนุพงษ์ นิยม ไว้ในที่เดียว ให้ผู้สนใจดูได้ง่ายทั้งบนคอมพิวเตอร์และมือถือ</p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h3>สร้างด้วย</h3>
+          <div class="chips dark">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap 5</span><span>AOS</span><span>Typed.js</span><span>Bootstrap Icons</span>
+          </div>
+          <p class="small-note">ต่อยอดจากเทมเพลต DevFolio ออกแบบหน้าตาใหม่ทั้งหมด ข้อมูลผลงานเก็บในไฟล์เดียว (projects.js) เพิ่มผลงานใหม่ได้ง่าย</p>
+        </div>
+        <div class="col-lg-4">
+          <h3>ข้อมูลติดต่อ</h3>
+          <ul class="credits-contact">
+            <li><i class="bi bi-person"></i> อนุพงษ์ นิยม · IT Support &amp; Software Developer</li>
+            <li><i class="bi bi-telephone"></i> <a href="tel:0955044849">095-504-4849</a></li>
+            <li><i class="bi bi-envelope"></i> <a href="mailto:anupong.niyo@gmail.com">anupong.niyo@gmail.com</a></li>
+            <li><i class="bi bi-geo-alt"></i> ซอยอ่อนนุช 49 กรุงเทพฯ</li>
+          </ul>
+        </div>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
+
+      <div class="credits-bottom">
+        <span>© <span id="year">2026</span> อนุพงษ์ นิยม · สงวนลิขสิทธิ์</span>
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+        <span class="credits">ออกแบบเทมเพลตโดย <a href="https://bootstrapmade.com/">BootstrapMade</a> เผยแพร่โดย <a href="https://themewagon.com" target="_blank">ThemeWagon</a></span>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="กลับขึ้นด้านบน"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
@@ -481,6 +349,8 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/custom.js"></script>
 
 </body>
 
