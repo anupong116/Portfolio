@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ผลงาน — อนุพงษ์ นิยม</title>
+  <meta name="description" content="Portfolio of อนุพงษ์ นิยม, IT graduate from Bangkok University — front-end development and mobile app UI/UX design.">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' fill='white' text-anchor='middle'%3EAN%3C/text%3E%3C/svg%3E" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="project-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">อนุพงษ์<span>.</span></h1>
+      </a>
+      <nav id="navmenu" class="navmenu" aria-label="เมนูหลัก">
+        <ul>
+          <li><a href="index.html#hero">หน้าแรก</a></li>
+          <li><a href="index.html#about">เกี่ยวกับฉัน</a></li>
+          <li><a href="index.html#resume">ประวัติ</a></li>
+          <li><a href="index.html#portfolio" class="active">ผลงาน</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" role="button" aria-label="เปิดเมนู" tabindex="0"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main" id="project-root">
+
+    <!-- Title band -->
+    <section class="page-title dark-background">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="ตำแหน่งหน้า">
+          <a href="index.html">หน้าแรก</a><i class="bi bi-chevron-right"></i>
+          <a href="index.html#portfolio">ผลงาน</a><i class="bi bi-chevron-right"></i>
+          <span data-bind="title">ผลงาน</span>
+        </nav>
+        <div data-bind="badge"></div>
+        <h1 data-bind="title">ผลงาน</h1>
+        <p class="lead" data-bind="summary"></p>
+        <div class="tags" data-bind="tags"></div>
+      </div>
+    </section>
+
+    <section class="project-details section">
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Sidebar: project info (top on mobile, sticky on desktop) -->
+          <aside class="col-lg-4 order-lg-2">
+            <div class="info-panel">
+              <h2>ข้อมูลโปรเจกต์</h2>
+              <dl data-bind="info"></dl>
+              <div class="tech" id="tech-wrap">
+                <h3>เทคโนโลยีที่ใช้</h3>
+                <div class="chips" data-bind="tech"></div>
+              </div>
+              <a href="index.html#portfolio" class="btn-ghost on-light w-100"><i class="bi bi-arrow-left"></i> กลับไปดูผลงานทั้งหมด</a>
+            </div>
+          </aside>
+
+          <div class="col-lg-8 order-lg-1">
+            <div class="overview">
+              <h2>ภาพรวม</h2>
+              <div data-bind="overview"></div>
+              <div class="highlights" id="highlights-wrap">
+                <h3>ฟีเจอร์และสิ่งที่ทำ</h3>
+                <ul data-bind="highlights"></ul>
+              </div>
+              <div class="highlights" id="howto-wrap">
+                <h3>วิธีใช้งาน / ขั้นตอนการทำงาน</h3>
+                <ol class="howto" data-bind="howto"></ol>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Screens: full width -->
+        <div id="screens-wrap">
+          <div class="screens-head">
+            <h2>หน้าจอทั้งหมด</h2>
+            <span class="muted" data-bind="count"></span>
+          </div>
+          <p class="screens-note" id="note-wrap"><i class="bi bi-info-circle"></i> <span data-bind="note"></span></p>
+          <div class="screens" data-bind="screens"></div>
+        </div>
+
+        <!-- Previous / next project -->
+        <nav class="project-pager" data-bind="pager" aria-label="ผลงานอื่น"></nav>
+      </div>
+    </section>
+
+    <!-- Shown when ?id= is missing or wrong -->
+    <section class="section not-found d-none" id="not-found">
+      <div class="container text-center">
+        <i class="bi bi-search"></i>
+        <h1>ไม่พบผลงานนี้</h1>
+        <p>ลิงก์อาจไม่ถูกต้อง หรือผลงานนี้ถูกนำออกแล้ว</p>
+        <a href="index.html#portfolio" class="btn-main"><i class="bi bi-arrow-left"></i> ดูผลงานทั้งหมด</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- End credits: what this site is, how it was built, how to get in touch -->
+  <footer id="contact" class="footer end-credits">
+    <div class="container">
+
+      <div class="credits-cta" data-aos="fade-up">
+        <span class="kicker">สนใจร่วมงาน?</span>
+        <h2>ยินดีพูดคุยเรื่องงานครับ</h2>
+        <p>สนใจรับผมเข้าร่วมทีม อยากสอบถามรายละเอียดผลงาน หรือนัดสัมภาษณ์ ติดต่อได้ทางโทรศัพท์หรืออีเมลด้านล่าง พร้อมเริ่มงานเต็มเวลา</p>
+        <div class="cta-actions">
+          <a class="btn-main" href="tel:0955044849"><i class="bi bi-telephone"></i> โทร 095-504-4849</a>
+          <a class="btn-ghost" href="mailto:anupong.niyo@gmail.com"><i class="bi bi-envelope"></i> anupong.niyo@gmail.com</a>
+          <button type="button" class="btn-ghost" id="copy-email" data-email="anupong.niyo@gmail.com"><i class="bi bi-copy"></i> <span>คัดลอกอีเมล</span></button>
+        </div>
+      </div>
+
+      <div class="row gy-4 credits-grid">
+        <div class="col-lg-4 col-md-6">
+          <h3>เว็บไซต์นี้ทำมาเพื่อ</h3>
+          <p>พอร์ตโฟลิโอสำหรับสมัครงาน รวบรวมประวัติ ประสบการณ์ทำงานจริง และผลงานที่ผ่านมาของ อนุพงษ์ นิยม ไว้ในที่เดียว ให้ผู้สนใจดูได้ง่ายทั้งบนคอมพิวเตอร์และมือถือ</p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h3>สร้างด้วย</h3>
+          <div class="chips dark">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap 5</span><span>AOS</span><span>Typed.js</span><span>Bootstrap Icons</span>
+          </div>
+          <p class="small-note">ต่อยอดจากเทมเพลต DevFolio ออกแบบหน้าตาใหม่ทั้งหมด ข้อมูลผลงานเก็บในไฟล์เดียว (projects.js) เพิ่มผลงานใหม่ได้ง่าย</p>
+        </div>
+        <div class="col-lg-4">
+          <h3>ข้อมูลติดต่อ</h3>
+          <ul class="credits-contact">
+            <li><i class="bi bi-person"></i> อนุพงษ์ นิยม · IT Support &amp; Software Developer</li>
+            <li><i class="bi bi-telephone"></i> <a href="tel:0955044849">095-504-4849</a></li>
+            <li><i class="bi bi-envelope"></i> <a href="mailto:anupong.niyo@gmail.com">anupong.niyo@gmail.com</a></li>
+            <li><i class="bi bi-geo-alt"></i> ซอยอ่อนนุช 49 กรุงเทพฯ</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="credits-bottom">
+        <span>© <span id="year">2026</span> อนุพงษ์ นิยม · สงวนลิขสิทธิ์</span>
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <span class="credits">ออกแบบเทมเพลตโดย <a href="https://bootstrapmade.com/">BootstrapMade</a> เผยแพร่โดย <a href="https://themewagon.com" target="_blank">ThemeWagon</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="กลับขึ้นด้านบน"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/project-page.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
